@@ -1,0 +1,21 @@
+[alias]
+    cp = cherry-pick
+    st = status
+    cl = clone
+    co = checkout
+    br = branch 
+[user]
+	name = Kwang Ketcham
+	email = prototype27+github@prototype27.com
+[color]
+	ui = true
+[diff]
+	renames = copies
+[branch]
+	autosetupmerge = true
+[push]
+	default = tracking
+[credential]
+	helper = osxkeychain
+[core]
+	excludesfile = ~/.gitignore
