@@ -37,7 +37,7 @@ plugins=(osx terminalapp brew pip git)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=/usr/local/git/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/texbin
+export PATH=/usr/local/git/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/texbin:~/bin
 fpath=(/usr/local/share/zsh-completions $fpath)
 
 export EDITOR=vim
@@ -58,6 +58,8 @@ alias ebuild='nocorrect ebuild'
 alias hpodder='nocorrect hpodder'
 alias sudo='nocorrect sudo'
 setopt correct
+
+alias ckan='mono ~/bin/ckan.exe'
 
 # Warn if ssh-agent is running but doesn't have primary key added.
 if [[ ! -z $SSH_AGENT_PID ]] &&
