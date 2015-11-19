@@ -5,17 +5,17 @@
     co = checkout
     br = branch 
 [user]
-	name = Kwang Ketcham
-	email = prototype27+github@prototype27.com
+    name = Kwang Ketcham
+    email = prototype27+github@prototype27.com
 [color]
-	ui = true
+    ui = true
 [diff]
-	renames = copies
+    renames = copies
 [branch]
-	autosetupmerge = true
+    autosetupmerge = true
 [push]
-	default = tracking
+    default = tracking
 [credential]
-	helper = osxkeychain
+    helper = osxkeychain
 [core]
-	excludesfile = ~/.gitignore
+    excludesfile = ~/.gitignore
