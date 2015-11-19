@@ -32,7 +32,7 @@ ZSH_THEME="kketcham/kketcham"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(osx terminalapp brew pip git)
+plugins=(osx brew brew-cask git pip screen ssh-agent terminalapp thefuck)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -46,6 +46,8 @@ bindkey -e
 
 setopt appendhistory
 setopt incappendhistory
+
+zstyle :omz:plugins:ssh-agent agent-forwarding on
 
 alias cd="builtin cd"
 alias man='nocorrect man'
