@@ -144,11 +144,15 @@ set nospell
 if has("autocmd")
     filetype on
 
+    """ === Filetype overrides ===
     autocmd BufRead,BufNewFile *.sig set filetype=sml
-
     autocmd BufRead,BufNewFile *.bcs set filetype=cs
     autocmd BufRead,BufNewFile *.bcsh set filetype=cs
+    autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
+    """ === Filetype-specific settings ===
+
+    """ wrap and spellcheck human-readable files
     autocmd FileType mail,human set formatoptions+=t textwidth=76 wrap spell
 
     """ For C-like programming, autoindent and wrap
