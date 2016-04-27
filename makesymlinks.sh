@@ -6,7 +6,10 @@
 
 ########## Variables
 
-dir=`dirname $0`                  # dotfiles directory
+pushd `dirname "$0"` > /dev/null
+dir=`pwd`                         # dotfiles directory
+popd > /dev/null
+
 olddir=$dir/dotfiles_old          # old dotfiles backup directory
 files="vimrc zshrc zshenv gitconfig gitignore htoprc"    # list of files/folders to symlink in homedir
 
