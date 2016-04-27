@@ -1,4 +1,4 @@
 dotfiles
 ========
 
-Scripts and such.
+Scripts and such. Run makesymlinks.sh to install.
