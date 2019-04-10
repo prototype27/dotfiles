@@ -37,6 +37,7 @@ plugins=(osx brew brew-cask git pip screen ssh-agent terminalapp)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+export PATH=/usr/local/git/bin:/usr/local/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/texbin:~/bin:/usr/bin:/bin
 fpath=(/usr/local/share/zsh-completions $fpath)
 
 export EDITOR=vim
