@@ -69,3 +69,8 @@ if [[ ! -z $SSH_AGENT_PID ]] &&
    [[ -z `ssh-add -l | grep "$HOME/.ssh/id_rsa"` ]]; then
        echo "SSH agent detected, but key is not loaded. Run ssh-add to fix."
 fi
+
+# System-specific config
+if [[ -f "$HOME/.zshrc.local" ]]; then
+    source $HOME/.zshrc.local
+fi
