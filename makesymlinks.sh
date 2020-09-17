@@ -11,7 +11,7 @@ dir=`pwd`                         # dotfiles directory
 popd > /dev/null
 
 olddir=$dir/dotfiles_old          # old dotfiles backup directory
-files="vimrc zshrc zshenv gitconfig gitignore htoprc"    # list of files/folders to symlink in homedir
+files="vimrc zshrc zshenv gitconfig gitconfig-github gitconfig-sourcehut gitignore htoprc"    # list of files/folders to symlink in homedir
 
 ##########
 

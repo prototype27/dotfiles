@@ -4,9 +4,6 @@
     cl = clone
     co = checkout
     br = branch 
-[user]
-    name = Kwang Ketcham
-    email = prototype27+github@prototype27.com
 [color]
     ui = true
 [diff]
@@ -19,3 +16,9 @@
     helper = osxkeychain
 [core]
     excludesfile = ~/.gitignore
+
+[includeIf "gitdir:~/git/"]
+    path = ~/.gitconfig-github
+
+[includeIf "gitdir:~/git/sourcehut/"]
+    path = ~/.gitconfig-sourcehut
