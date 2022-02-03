@@ -22,3 +22,5 @@
 
 [includeIf "gitdir:~/git/sourcehut/"]
     path = ~/.gitconfig-sourcehut
+[pull]
+	rebase = false
